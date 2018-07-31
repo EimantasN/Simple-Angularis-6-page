@@ -1,0 +1,42 @@
+.jumbotron {
+    background: transparent;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+#hello {
+    line-height: 35px;
+    min-height: 35px;
+}
+
+table span {
+    display: none;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.hello span {
+    display: none;
+}
+
+.typed-cursor {
+    display: none;
+}
+
+@media (max-width: 568px) {
+    td {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-height: 568px) {
+    .hello {
+        padding-top: 100px;
+    }
+}

@@ -1,0 +1,176 @@
+#leftArrowText {
+    cursor: pointer;
+}
+
+#rightArrowText {
+    cursor: pointer;
+}
+
+.down {
+    transform: scale(2) rotate(180deg);
+    position: absolute;
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.down2 {
+    transform: scale(2) rotate(180deg);
+    position: absolute;
+    top: 0;
+    transform: rotate(-90deg);
+}
+
+.down {
+    position: absolute;
+    top: 50%;
+    left: calc(95% - 50px);
+    z-index: 99;
+}
+
+.down2 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 99;
+}
+
+.oneArrow {
+    animation-name: button-down-one;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+.twoArrow {
+    animation-name: button-down-two;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+.threeArrow {
+    animation-name: button-down-three;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes button-down-one {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes button-down-two {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes button-down-three {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#leftArrowTextspan {
+    position: absolute;
+    top: 50%;
+    left: calc(5% + 50px);
+    font-size: 15px;
+    color: white;
+    line-height: 50px;
+    display: none;
+    font-weight: 100;
+    padding-left: 10px;
+    margin: 0;
+}
+
+#rightArrowTextspan {
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    right: calc(5% + 54px);
+    font-size: 15px;
+    color: white;
+    line-height: 50px;
+    display: none;
+    margin: 0;
+}
+
+.arrowSize {
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .arrowSize {
+        width: 25px;
+        height: 25px;
+    }
+    #rightArrowTextspan {
+        font-weight: 100;
+        position: absolute;
+        top: 50%;
+        right: calc(5% + 25px);
+        font-size: 12px;
+        color: white;
+        line-height: 25px;
+        display: none;
+        margin: 0;
+    }
+    #leftArrowTextspan {
+        position: absolute;
+        top: 50%;
+        left: calc(5% + 25px);
+        font-size: 12px;
+        color: white;
+        line-height: 25px;
+        display: none;
+        font-weight: 100;
+        padding-left: 10px;
+        margin: 0;
+    }
+    .down {
+        position: absolute;
+        top: 50%;
+        left: calc(95% - 25px);
+        z-index: 99;
+    }
+}

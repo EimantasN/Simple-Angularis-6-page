@@ -1,0 +1,285 @@
+.ContainerMembers {
+    padding-top: 100px;
+    width: 100vw;
+    text-align: center;
+    min-width: 360px;
+    float: left;
+}
+
+#TeamHello {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    float: left;
+}
+
+#TeamHello span {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    line-height: calc(50vh - 50px);
+    font-size: 75px;
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: calc(50vh - 50px);
+    text-align: center;
+}
+
+.bubble {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08), 0px 15px 35px 0px rgba(49, 65, 93, 0.10);
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: width 1s, height 1s;
+}
+
+.ActiveMember {
+    width: 0px;
+    height: 0px;
+}
+
+.one {}
+
+.two {}
+
+.three {}
+
+.four {}
+
+#memberInfo {
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.about-section {
+    display: inline-block;
+    margin: 0 auto;
+    height: 200px;
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+}
+
+.BigQuote {}
+
+.Quoteparent-div {
+    background-color: transparent;
+    /* Center Div */
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 200px;
+    padding-top: 25px;
+}
+
+#Quotetext {
+    padding-top: 15px;
+    font-size: 25px;
+    line-height: 30px;
+    display: inline-block;
+    font-family: 'Short Stack', cursive;
+    float: left;
+}
+
+.quoteContainer {
+    position: relative;
+    font-size: 35px;
+    height: 200px;
+    width: 80%;
+    float: left;
+}
+
+#TopQuoteMarks {
+    line-height: normal;
+    position: relative;
+    font-size: 80px;
+    width: 10%;
+    float: left;
+}
+
+#BottomQuoteMarks {
+    position: relative;
+    font-size: 80px;
+    line-height: normal;
+    width: 10%;
+    float: left;
+}
+
+.activeFoto {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08), 0px 15px 35px 0px rgba(49, 65, 93, 0.10);
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    display: inline-block;
+}
+
+.aboutMe {
+    display: inline-block;
+    min-height: 200px;
+    height: auto;
+    text-align: center;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.15);
+    -moz-border-radius-bottomright: 50px;
+    -moz-border-radius-topright: 50px;
+    border-radius: 200px 25px 25px 200px;
+}
+
+.aboutMe_Text_wrapper {
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.about-section blockquote {
+    font-family: 'Roboto', sans-serif;
+}
+
+q {
+    font-size: 30px;
+    quotes: "\201C""\201D""\2018""\2019";
+    text-align: center;
+    line-height: 45px;
+}
+
+q:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -40px;
+    position: relative;
+    top: 5px;
+    color: #FFF;
+    font-size: 3em;
+}
+
+q:after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 40px;
+    position: relative;
+    top: 80px;
+    color: #FFF;
+    font-size: 3em;
+}
+
+#MemberName {
+    font-size: 20px;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    height: 25%;
+}
+
+#MemberDuty {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    width: calc(100% - 200px);
+    height: 25%;
+    font-style: italic;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    float: left;
+}
+
+.CodeLanguages {
+    width: auto;
+    display: inline-block;
+}
+
+.DisplayCenter {
+    padding-top: 5%;
+    width: calc(100% - 200px);
+    text-align: center;
+    float: left;
+    height: 50%;
+}
+
+.iconCode {
+    width: 30px;
+}
+
+.iconCode img {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 1400px) {
+    #hello {
+        font-size: 25px;
+    }
+    #helloBottom {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .aboutMe {
+        width: 100%;
+    }
+    .Quoteparent-div {
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 900px) {}
+
+@media (max-width: 768px) {
+    .DisplayCenter {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    #MemberDuty {
+        width: 100%;
+    }
+    #memberInfo {}
+    .aboutMe {
+        border-radius: 200px;
+    }
+    .aboutMe_Img_wrapper {
+        float: left;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .activeFoto {
+        float: none;
+        display: inline-block;
+    }
+    .aboutMe_Text_wrapper {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .Quoteparent-div {}
+}
+
+@media (max-width: 768px) {
+    .CodeLanguages {
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 568px) {
+    .CodeLanguages {
+        padding-bottom: 50px;
+    }
+}

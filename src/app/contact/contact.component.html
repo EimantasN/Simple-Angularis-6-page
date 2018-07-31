@@ -1,0 +1,42 @@
+<div class="container">
+
+    <div class="row" style="text-align: center; padding-top: 100px;">
+        <div class="jumbotron">
+            <h1>Get in touch</h1>
+            <p>We’re very approachable and would love to speak to you. Feel free to call, send us an email, Tweet us or simply complete the enquiry form.</p>
+        </div>
+    </div>
+
+    <div class=row>
+        <div class="col-md-6">
+            <form>
+                <div class="form-group" style="color:white">
+                    <label for="FirstName">First name</label>
+                    <input type="text" class="form-control" id="FirstName">
+                </div>
+                <div class="form-group" style="color:white">
+                    <label for="LastName">Last name</label>
+                    <input type="text" class="form-control" id="LastName">
+                </div>
+
+                <div class="form-group" style="color:white">
+                    <label for="Email">Email address</label>
+                    <input type="email" class="form-control" id="Email">
+                </div>
+
+                <div class="form-group" style="color:white">
+                    <label for="comment">Message</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div id="GoogleMap">
+                <agm-map [latitude]="lat" [longitude]="lng">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                </agm-map>
+            </div>
+        </div>
+    </div>
+</div>
